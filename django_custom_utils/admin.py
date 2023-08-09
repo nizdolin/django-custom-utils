@@ -4,7 +4,9 @@ from django.contrib.admin.options import InlineModelAdmin
 
 __all__ = [
     'ModelAdmin',
-    'InlineModelAdmin',
+    'BaseInline',
+    'StackedInline',
+    'TabularInline',
 ]
 
 
@@ -54,3 +56,11 @@ class BaseInline(InlineModelAdmin):
         if self.readonly:
             return 0
         return super().get_extra(request, obj, **kwargs)
+
+
+class StackedInline(BaseInline):
+    template = 'admin/edit_inline/stacked.html'
+
+
+class TabularInline(BaseInline):
+    template = 'admin/edit_inline/tabular.html'

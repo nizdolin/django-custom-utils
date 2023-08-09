@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
-from django_custom_utils.models.models import BaseModel
+from django_custom_utils.models import BaseModel
 
 __all__ = [
     'ForeignKey',

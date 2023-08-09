@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.utils.functional import classproperty
 from django.utils.html import conditional_escape, format_html
 
-from django_custom_utils.models.managers import ActiveManager
+from django_custom_utils.managers import ActiveManager
 from django_custom_utils import utils
 
 

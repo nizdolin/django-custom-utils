@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 
 VERSION = '1.0.0'
-DESCRIPTION = 'A collection of utilities that makes working with Django easier.'
+DESCRIPTION = 'A collection of utilities that makes working with Django and DRF easier.'
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -49,9 +49,6 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        # 'Documentation': 'https://django-custom-utils.readthedocs.io/',
-        # 'Changelog': 'https://github.com/nizdolin/django-custom-utils/blob/main/CHANGELOG.md',
         'Source': 'https://github.com/nizdolin/django-custom-utils',
-        # 'Tracker': 'https://github.com/nizdolin/django-custom-utils/issues',
     },
 )
