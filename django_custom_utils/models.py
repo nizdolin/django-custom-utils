@@ -75,8 +75,8 @@ class BaseModel(models.Model):
         return cls._meta.get_field(field_name)  # noqa
 
 
-class ActiveModel(BaseModel):
-    active = models.BooleanField(default=True, verbose_name=_("Is active?"))
+class IsActiveModel(BaseModel):
+    is_active = models.BooleanField(default=True, verbose_name=_("Is active?"))
 
     objects = models.Manager()
     active_objects = ActiveManager()
